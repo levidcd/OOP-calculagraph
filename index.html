@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>计时器</title>
+  </head>
+
+  <style>
+    .container {
+      margin: 0 auto;
+      width: 300px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ipt {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    input {
+      width: 100px;
+      height: 50px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .btn {
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button {
+      margin: 10px 10px;
+      width: 50px;
+      height: 30px;
+      font-size: 10px;
+    }
+
+    #currentTime {
+      margin: 10px;
+      color: green;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <h1>计时器</h1>
+      <div class="ipt">
+        <input id="inputh" type="number" placeholder="时" />
+        <input id="inputm" type="number" placeholder="分" />
+        <input id="inputs" type="number" placeholder="秒" />
+      </div>
+      <div class="btn">
+        <button id="btn-start" onclick="start_counting()">开始</button>
+        <button id="btn-pause" onclick="pause_counting()">暂停</button>
+        <button id="btn-stop" onclick="end_counting()">结束</button>
+      </div>
+      <p id="currentTime">当前时间：</p>
+    </div>
+  </body>
+</html>
